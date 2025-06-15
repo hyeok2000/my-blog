@@ -26,7 +26,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t bg-background">
+    <footer className="relative z-10 w-full border-t bg-background">
       <div className="container mx-auto max-w-7xl px-4 py-8">
         
         {/* 메인 푸터 콘텐츠 - 반응형 2열/1열 레이아웃 */}

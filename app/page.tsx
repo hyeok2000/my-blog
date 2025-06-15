@@ -123,27 +123,29 @@ export default async function Home() {
 
   return (
     <>
-      {/* 배경 이미지 및 오버레이 - 고정 위치로 전체 화면을 덮고, 가장 낮은 z-index */}
+      {/* 배경 이미지 및 오버레이 - absolute 위치로 변경하고 z-index 조정 */}
       <div
-        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url("/i13996610007.png")',
           filter: 'brightness(0.7)'
         }}
       />
-      <div className="fixed inset-0 bg-black/30 z-0" />
+      <div className="absolute inset-0 bg-black/30 z-0" />
 
       {/* 실제 컨텐츠 - 배경 위에 표시되도록 z-index 설정 */}
       <div id="main-content" className="relative z-10 py-16 bg-gray-100">
         {/* Hero 섹션 */}
         <section className="text-center mb-20">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
-              어서오세요~
+            <h1
+              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-orange-500"
+              style={{ WebkitTextStroke: '2px black', WebkitTextFillColor: '#f97316' }}
+            >
+              임도혁의 메이플 모든것
             </h1>
             <p className="text-lg md:text-xl text-black max-w-2xl mx-auto mb-8 leading-relaxed">
-              웹 개발, JavaScript, React, Next.js에 관한 최신 기술과 실무 경험을 공유합니다. 
-              함께 성장하는 개발자가 되어보세요.
+              웹프로그래밍 수업을 통해만든 임도혁의 메이플 블로그
             </p>
             
             {/* CTA 버튼들 */}
