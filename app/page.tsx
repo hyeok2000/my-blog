@@ -171,7 +171,7 @@ export default async function Home() {
               <h2 className="text-3xl font-bold text-black">최신 게시물</h2>
               <Link
                 href="/posts"
-                className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                className="rounded-lg border border-primary px-4 py-2 text-sm font-medium text-primary bg-primary/10 hover:bg-primary/20 transition-all duration-200 shadow-sm"
               >
                 모든 글 보기
                 <ArrowRight className="ml-1 h-4 w-4" />
@@ -274,7 +274,7 @@ export default async function Home() {
               <h2 className="text-3xl font-bold text-black">카테고리</h2>
               <Link
                 href="/categories"
-                className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                className="rounded-lg border border-primary px-4 py-2 text-sm font-medium text-primary bg-primary/10 hover:bg-primary/20 transition-all duration-200 shadow-sm"
               >
                 모든 카테고리 보기
                 <ArrowRight className="ml-1 h-4 w-4" />
